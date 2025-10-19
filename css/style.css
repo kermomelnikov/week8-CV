@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #333333;
+    --primary-light: #fff4e6;
+    --muted-grey: #7D6F6F;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --link-fonts: "Quicksand", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-light);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+header h1 {
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+header h1 {
+    display: grid;
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 2.6rem;
+    padding: 1rem 0;
+}
+
+header p {
+    display: grid;
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+}
+
+header p {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.image-container {
+    display: grid;
+    width: 80%;
+    height: auto;
+}
+.image-container {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 5px;
+}
+
+.cv-image {
+    width: 100%;
+    height: auto;
+}
+
+.cv-image img{
+    width: 95%;
+    height: 400px;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 5px;
+}
+
+.main h2{
+    font-size: 1.5rem;
+    margin: 1.2rem;
+}
+
+.main p{
+    margin: 7px;
+    text-align: left;
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+}
+
+
+.töökogemus {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.haridus {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 5px;
+}
+
+footer h2{
+    font-size: 1.5rem;
+    margin: 1.2rem;
+}
+
+.lisakvalifikatsioonid {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    list-style: none;
+}
+
+.lisakvalifikatsioonid li{
+    margin: 7px;
+    text-align: left;
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+}
+
+.kontakt {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.kontakt li{
+    list-style: none;
+    margin: 7px;
+    text-align: left;
+    font-family: var(--body-font);
+    font-size: 1.3rem;
+}
+
+.review-stars {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.review-stars .rating-stars {
+    display: grid;
+    list-style: none;
+    width: 70%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.review-stars .rating-stars li {
+    font-size: 2rem;
+    color: var(--muted-grey);
+}
+.reviews-btn-container {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 70%;
+    height: 50px;
+    padding-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+
+    }
+    
+    .image-container{
+        width: 100%;
+        height: auto;
+    }
+}
